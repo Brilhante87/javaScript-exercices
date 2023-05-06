@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Exercise </title>
-</head>
-<body>
-    <h1>Exercices JavaScript</h1>
-    <script src= "./main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Exercise </title>
+    </head>
+    <body id = "body">
+        <header>
+            <h1 id = "titre-principal">Exercices JavaScript</h1>
+        </header>
+        <section class = "container">
+            <form id = "my-form">
+                <h1 id = "add-user">Add User</h1>
+                <div class = "msg" id = "msg"></div>
+                <div>
+                    <label for = "name">Name</label>
+                    <input type = "text" id = "name" />
+                </div>
+                <div>
+                    <label for = "email">Email</label>
+                    <input type = "text" id = "email" />
+                </div>
+            
+                <input type = "submit" id = "submit-button" value = "Submit" class = "btn" />
+            </form>
+            <ul class="items">
+                <li class ="item"></li> 
+            </ul> 
+        </section>
+        <script src= "./main.js"></script>
+    </body>
 </html>
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+       font-family:Arial, Helvetica, sans-serif;
+       font-size: 12px;
+    }
+    body{
+        background:yellow;
+    }
+
+    form{
+
+        padding: 1em;
+        background: black;
+        border-radius: 10px;
+        width:450px;
+        margin-left: 40px;
+    
+    
+    }
+    input {
+        display: block;
+        margin-bottom: 10px;
+        width:100%;
+    }
+    label{ color:white;}
+    .error{
+        background : rgb(255, 174, 0);
+        color : white;
+        padding : 10px;
+        margin : 10px;
+    }
+    .li{
+        background:black;
+        color: white;
+
+        width: 60%; 
+    }
+    ul{
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+       
+    }
+    .btn{background:aquamarine}
+    .btn:hover{ 
+        background:rgb(0, 162, 255); 
+        transition: 1s;}
+    
+</style>
